@@ -2,9 +2,8 @@
     margin: 0;
 }
 
-body {
+.body {
     background-color: #323131;
-    border: 2px solid white;
 }
 
 .image {
