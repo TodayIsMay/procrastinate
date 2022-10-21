@@ -19,6 +19,7 @@ let body = document.querySelector('.body');
 let phrase = document.querySelector('.phrase');
 
 button.addEventListener('click', function () {
+    fetch('http://localhost:8080/admin/users').then(result => console.log(result));
     let randomElement = getRandomElement(phrases);
     smoothly(advice, 'textContent', randomElement);
     if (randomElement.length >= 40) {
